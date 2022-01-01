@@ -1,9 +1,11 @@
 
 let elements = document.getElementsByTagName("g");
 
-let info = document.getElementById("info")
 let provinceName = document.getElementById("nameProvince")
+let provinceTitle = document.getElementById("title")
+let carte = document.getElementById("canadaMap")
 
+let info = document.getElementById("info")
 info.addEventListener("click", hideInfo);
 
 function findProvinces() {
@@ -18,17 +20,14 @@ function addEvents(el){
     elements[el].addEventListener("click", provinceClicked)
 }
 
-
-
-
 function provinceClicked(){
     
     info.style.display = "block";
-
-
-    provinceName.innerHTML = `${provincesInfo[this.id]._name}`;
+    carte.style.filtre = "blur(2px)";
     
-    
+
+    // provinceName.innerHTML = `${provincesInfo[this.id]._name}`;
+    provinceTitle.innerHTML = `${provincesInfo[this.id]._name}`;
     
 }
 
@@ -36,18 +35,11 @@ function provinceClicked(){
 function hideInfo() {
 
     info.style.display = "none";
-
+    provinceTitle.innerHTML = `Canada`;
+    
 }
 
-        
-//  let provincesInfo = {
 
-//     pName : ["Québec", "Ontario", "Manitoba"],
-//     pPrime : ["Doyon", "Keney", "Dowenend"]
-
-//  }   
-
- 
 class Province{
 
     constructor(name, capital, parti, prime, opposition, chefOpposition, lieutgouv, secteurs, note){
@@ -63,15 +55,15 @@ class Province{
     }
 }
 
-function provinceSelector(number) {
+// function provinceSelector(number) {
 
-    // console.log(`${provincesInfo.pName[number]} et
-    //              ${provincesInfo.pPrime[number]}`)
+//     // console.log(`${provincesInfo.pName[number]} et
+//     //              ${provincesInfo.pPrime[number]}`)
 
-    console.log(`${provincesInfo[number]._name}
-    ${provincesInfo[number]._parti}`)
+//     console.log(`${provincesInfo[number]._name}
+//     ${provincesInfo[number]._parti}`)
 
-}
+// }
 
 let provincesInfo = []
 
@@ -221,7 +213,6 @@ let pe = new Province("Île-du-Prince-Édouard",
 
 provincesInfo = [ nl, bc, ns, qc, on, yt, nt, nu, pe, nb, mb, sk, ab]
 
-console.log(`${provincesInfo[0]._name} ${provincesInfo[1]._name}`)
 
 // select elements
 // var elements = Array.from(document.querySelectorAll('g'));
