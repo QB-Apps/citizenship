@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>citizenship</title>
 </head>
-<body>
+<body onload="findProvinces()">
     
     <div class="container"> 
         <h1>Citizenship</h1>
 		<svg version="1.1" id="canadaMap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 viewBox="0 0 694.4 685" style="enable-background:new 0 0 694.4 685;" xml:space="preserve">
+			 viewBox="0 0 694.4 685">
 	
-			<g id="NFL_L">
+			<g id="NFL_L" >
 				<path class="province_path" d="M629.7,480c-2.4,0.3-3.1-2.5-5-3c0,0,0,0,0,0c0.1-0.3,0.1-0.7-0.1-1c-1.1-2.6-2.8-1.3-4.5-0.7
 					c-14.3,5.3-28.7,10.5-43,15.7c-2.4,0.9-4.8,1.4-7.3,0.5c-5.7-1.9-6-1.9-6,4.4c0,3.8-1.8,4.4-4.9,4.1c-2.5-0.3-4.5-2.5-7.1-2
 					c-3.9,0.7-5.5-1.2-5.8-4.7c-0.3-2.7-1.4-4-4.3-2.8c-3.2,1.3-4.3-0.1-4-3.3c0.2-2.2-0.1-4-2.4-5.5c-8.6-5.5-9-9.9-2.3-17.9
@@ -33,13 +34,13 @@
 					c-1.4,2.2-2.8,3.8-6,2.1c-3.1-1.6-3.4-1.2-6.5-10.2c-2,4.7-6,7.9-6.2,13.3c0,1.8-1.4,3.4-3.4,4c-1.4,0.4-3.3,0.9-4.3-0.2
 					c-1.4-1.4,0.6-2.2,1.3-3.2c0.8-1.2,1.5-2.4,0.6-3.7c-0.8-1.3-2.1-0.4-3.2-0.1c-8.6,2.9-17.1,5.9-25.7,8.7c-1.8,0.6-3.8,2.9-5.8,0.4
 					c-1.7-2.1-1.3-4.4-0.1-6.6c1-1.7,1.5-3.3,0-5c-0.4-0.4-0.7-1.3-0.5-1.8c3.8-12.2-0.2-24.8,2.5-37.1c0.6-2.7,0.7-5.6,1.1-8.3l0,0
-					c0.3-0.3,0.7-0.7,1-1l0,0C631.1,478.6,631.4,478.3,631.7,478C631.8,477.9,631.7,478,631.7,478z"/>
+					c0.3-0.3,0.7-0.7,1-1l0,0C631.1,478.6,631.4,478.3,631.7,478C631.8,477.9,631.7,478,631.7,478z" />
 				<rect x="582.1" y="399.6" class="st2" width="87" height="30.4"/>
 				<text transform="matrix(1 0 0 1 582.1451 408.1656)"><tspan x="0" y="0" class="province_text">Newfoundland &amp;</tspan><tspan x="0" y="14.4" class="province_text">Labrador</tspan></text>
 				<rect class="st6" x="616.4" y="427.2" width="3.7" height="35.8"/>
 				<circle class="st5" cx="618.3" cy="462.9" r="7.1"/>
 			</g>
-			<g id="BC">
+			<g id="BC" >
 				<path class="province_path" d="M128.9,541c-1.2,1.8-2.6,0.6-4,0.2c-17.8-4.8-34.9-11.8-52.2-18.2c-1.4-0.5-2.7-1.3-4.2-1.6
 					c-8.9-1.9-15.3-6.8-19.3-14.9c-1.3-2.7-4.4-4.2-4.5-7.5c-0.8-3.5-0.4-7.6-5-9l0,0c-0.3-0.3-0.7-0.7-1-1l0,0c0.1-0.9-0.2-1.6-1-2
 					l0,0c-0.4-1-0.8-2-1.2-3.1c1-2.9-0.9-4.4-3-5.5c-3.2-1.6-4.2-4-3.8-7.3c0.5-4.5-0.9-8.9,2.2-13.4c1.5-2.2,0.3-6.7-2.1-9.6
@@ -346,12 +347,22 @@
 		</svg>
 </div>
 
-<div class="info">
-
+<div id="info">
+    <div id="proContainer">
+        <div class="left"></div>
+        <form id="proForm" action="">
+            <button id="nameProvince" >Québec</button><br>
+            <label for="">Premier Ministre</label><br>
+            <label for="">Parti au pouvoir</label><br>
+            <label for="">chef de l'opposition</label><br>
+            <label for="">lieutenant-gouverneur</label><br>
+        </form>
+        <div class="right"></div>
+    </div>
 </div>
 
     
+<script src="script.js"></script>
 
-    <script src="/script.js"></script>
 </body>
 </html>
