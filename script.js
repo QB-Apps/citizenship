@@ -25,7 +25,10 @@ function provinceClicked(){
     
     info.style.display = "block";
 
-    provinceName.innerHTML = `${this.id}`;
+
+    provinceName.innerHTML = `${provincesInfo[this.id]._name}`;
+    
+    
     
 }
 
@@ -37,9 +40,188 @@ function hideInfo() {
 }
 
         
-    
+//  let provincesInfo = {
+
+//     pName : ["Québec", "Ontario", "Manitoba"],
+//     pPrime : ["Doyon", "Keney", "Dowenend"]
+
+//  }   
+
+ 
+class Province{
+
+    constructor(name, capital, parti, prime, opposition, chefOpposition, lieutgouv, secteurs, note){
+        this._name = name;
+        this._capital = capital;
+        this._parti = parti;
+        this._prime = prime;
+        this._opposition = opposition;
+        this._chefOpposition = chefOpposition;
+        this._lieutgouv = lieutgouv;
+        this._secteurs = secteurs;
+        this._note = note;
+    }
+}
+
+function provinceSelector(number) {
+
+    // console.log(`${provincesInfo.pName[number]} et
+    //              ${provincesInfo.pPrime[number]}`)
+
+    console.log(`${provincesInfo[number]._name}
+    ${provincesInfo[number]._parti}`)
+
+}
+
+let provincesInfo = []
+
+let qc = new Province("Québec", 
+                      "Ville de Québec", 
+                      "CAQ Coalition Avenir Québec",
+                      "François Legault",
+                      "PQ Parti Québecois",
+                      "Pauline Marois",
+                      "Doyon",
+                      "Turisme, agrigulture, Hydroelecticité",
+                      "Vote Femme 1916"
+                      ); 
+
+let on = new Province("Ontario", 
+                      "Toronto", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      );  
+
+let nl = new Province("Terre-Neuve-et-Labrador", 
+                      "Toronto", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+let bc = new Province("Colombie-Britannique", 
+                      "Victoria", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      );  
+
+let ab = new Province("Alberta", 
+                      "Edmonton", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
 
 
+let mb = new Province("Manitoba", 
+                      "Winnipeg", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      );  
+
+let nb = new Province("Nouveau-Brunswick", 
+                      "Fredericton", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+let ns = new Province("Nouvelle-Écosse", 
+                      "Halifax", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      );  
+
+let sk = new Province("Saskatchewan", 
+                      "Regina", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+let nu = new Province("Nunavut", 
+                      "Iqaluit", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+let nt = new Province("Territoires du Nord-Ouest", 
+                      "Yellowknife", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+let yt = new Province("Yukon", 
+                      "Whitehorse", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+let pe = new Province("Île-du-Prince-Édouard", 
+                      "Charlottetown", 
+                      "Conservative Party",
+                      "Dogdford",
+                      "Parti Libéral",
+                      "Auwen",
+                      "Peter",
+                      "Turisme, agrigulture, services",
+                      "Bilangue"
+                      ); 
+
+provincesInfo = [ nl, bc, ns, qc, on, yt, nt, nu, pe, nb, mb, sk, ab]
+
+console.log(`${provincesInfo[0]._name} ${provincesInfo[1]._name}`)
 
 // select elements
 // var elements = Array.from(document.querySelectorAll('g'));
