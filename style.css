@@ -103,7 +103,7 @@ svg {
 }
 
 g:hover{
-	fill:blue;
+	fill:rgb(234, 0, 255);
 	cursor: pointer;
  }
 

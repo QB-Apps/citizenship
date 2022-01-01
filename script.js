@@ -8,6 +8,10 @@ let carte = document.getElementById("canadaMap")
 let info = document.getElementById("info")
 info.addEventListener("click", hideInfo);
 
+
+let selectedProv = "";
+
+
 function findProvinces() {
 
 for (var i = 0; i < elements.length; i++) {   
@@ -22,12 +26,12 @@ function addEvents(el){
 
 function provinceClicked(){
     
-    info.style.display = "block";
-    carte.style.filtre = "blur(2px)";
-    
+    info.style.display = "block";    
 
-    // provinceName.innerHTML = `${provincesInfo[this.id]._name}`;
     provinceTitle.innerHTML = `${provincesInfo[this.id]._name}`;
+
+    selectedProv = this.id;
+    
     
 }
 
@@ -36,7 +40,19 @@ function hideInfo() {
 
     info.style.display = "none";
     provinceTitle.innerHTML = `Canada`;
+    document.getElementById("capital").innerHTML = "Respuesta";
     
+}
+
+function verRespuesta() {
+
+       
+
+    document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
+
+    alert(`${provincesInfo[selectedProv]._capital}`);
+    
+
 }
 
 
