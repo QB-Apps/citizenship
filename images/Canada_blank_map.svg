@@ -1,9 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1114" height="942" viewBox="-24500 -27050 55700 47100">
 	<title>Map of Canada</title>
 	<style type="text/css">
+	
+
+	:root {
+  --hovered: #1e90ff;
+  --white: #ffffff;
+		}
+
 		path{
 			stroke-linejoin:round;
 			stroke-linecap:round;
+		}
+
+		#BC:hover {
+			fill: var(--hovered);
 		}
 	</style>
 	<defs id="defs1">
