@@ -13,18 +13,33 @@
 }
 
 body {
+	
+	background-color: #282c34;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
 }
+
 .container {
-  max-width: 960px;
+  /* max-width: 960px; */
   width: 100%;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
+h1 {
+	color: rgb(170, 10, 10);
+}
+
+.info {
+	display: none;
+	background-color: rgba(0, 0, 255, 0.363);
+	width: 1000vh;
+	min-height: 200%;
+	position: absolute;
+}
 
  #canadaMap {
  	width: 60vw;
