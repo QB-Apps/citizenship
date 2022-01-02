@@ -36,14 +36,14 @@ function hideInfo() {
 
     info.style.display = "none";
     provinceTitle.innerHTML = `Canada`;
-    document.getElementById("capital").innerHTML = "Respuesta";
-    document.getElementById("prime").innerHTML = "Respuesta";
-    document.getElementById("parti").innerHTML = "Respuesta";
-    document.getElementById("lieutgouv").innerHTML = "Respuesta";
-    document.getElementById("opposition").innerHTML = "Respuesta";
-    document.getElementById("chefOp").innerHTML = "Respuesta";
-    document.getElementById("secteurs").innerHTML = "Respuesta";
-    document.getElementById("note").innerHTML = "Respuesta";
+    // document.getElementById("capital").innerHTML = "Respuesta";
+    // document.getElementById("prime").innerHTML = "Respuesta";
+    // document.getElementById("parti").innerHTML = "Respuesta";
+    // document.getElementById("lieutgouv").innerHTML = "Respuesta";
+    // document.getElementById("opposition").innerHTML = "Respuesta";
+    // document.getElementById("chefOp").innerHTML = "Respuesta";
+    // document.getElementById("secteurs").innerHTML = "Respuesta";
+    // document.getElementById("note").innerHTML = "Respuesta";
     
 }
 
