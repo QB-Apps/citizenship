@@ -108,7 +108,7 @@ let on = new Province("Ontario",
                       );  
 
 let nl = new Province("Terre-Neuve-et-Labrador", 
-                      "Toronto", 
+                      "St. John's", 
                       "Conservative Party",
                       "Dogdford",
                       "Parti Libéral",
