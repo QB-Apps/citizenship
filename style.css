@@ -2,15 +2,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased; */
   /* font-smoothing: antialiased; */
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
 }
+
 
 body {
 
@@ -21,16 +22,46 @@ body {
   line-height: 30px;
 
   color: rgb(255, 255, 255);
+  
+  
+}
+
+.main-container{
+	/* background: rgb(238, 103, 103); */
+	margin: 0 auto;
+
+	position: relative;
+	
+	max-width: 1000px;
+	
+	/* width: 500px; */
 }
 
 .container {
-  /* max-width: 960px; */
+
+	/* background-color: rgb(14, 165, 72); */
+	/* width: 100%; */
+  /* max-width: 600px; */
   /* width: 500px;
   height: 500px; */
-  margin: 0 auto;
-  position: relative;
+  /* margin: 0 auto; */
+  margin-top: 1rem;
+  /* position: relative; */
   text-align: center;
+  /* display: flex; */
+
 }
+
+#canadaMap {
+
+	/* background-color: rgb(165, 14, 14); */
+ 	/* width: 140vw; */
+ 	max-width: 900px;
+ 	margin: 0 auto;
+ 	/* display: block; */
+	/* padding-left: 1rem; */
+	/* filter: blur(2px); */
+ }
 
 h1 {
 	color: rgb(170, 10, 10);
@@ -39,24 +70,29 @@ h1 {
 #info {
 	display: none;
 	/* background-color: rgba(0, 0, 255, 0.363); */
+	
+	/* background-color: rgba(243, 107, 107, 0.349); */
+	/* margin-top: 35px; */
 	width: 100%;
-	min-height: 200%;
+	min-height: 100%;
 	position: absolute;
 	top: 0;
-/* 	
+	/* display: flex; */
+/*
 	filter: blur(8px);
   -webkit-filter: blur(8px); */
 
 }
 
 #close {
-	/* background-color: rgb(3, 78, 175); */
-	display: flex;
-	/* border: none; */
+	background-color: rgba(255, 255, 255, 0);
+	/* display: flex; */
+	border: none;
 	outline: none;
 	margin-right: 50px;
 	padding: .5rem;
 	font-size: 2rem;
+	color: whitesmoke;
 }
 
 /* #proContainer{
@@ -76,29 +112,35 @@ h1 {
 	/* padding: 5px; */
 	/* border-radius: 20px; */
 	/* box-shadow: 1px 1px 10px 1px black; */
-	
+
 	margin-left: 1rem;
-	
+
 }
 
 #proForm p {
 	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 5px black;
 	/* background-color: #fff; */
-	
+
 }
 
 
 #proContainer {
 	display: grid;
-	grid-template-columns: 1fr 10rem 30% 1fr;
+	grid-template-columns: 1rem 10rem 1fr 1fr;
 	align-items: start;
 	justify-content: start;
-	margin-top: 50px;
+	margin-top: 30px;
 	padding-top: 50px;
-	background-color: rgba(243, 107, 107, 0.349);
+	/* background-color: rgba(243, 107, 107, 0.349); */
 	/* background-color: rgb(11, 155, 88); */
 
+}
+
+.respuestas {
+	/* background-color: rgb(39, 223, 70); */
+	/* grid-column: 3 span 4; */
+	grid-column: 3/5;
 }
 
 #proForm > button {
@@ -107,21 +149,14 @@ h1 {
 }
 
 
- #canadaMap {
 
-	/* background-color: rgb(165, 14, 14); */
- 	width: 140vw;
- 	margin: 0 auto;
- 	/* display: flex; */
-	padding-left: 1rem;
-	/* filter: blur(2px); */
- }
+
 svg {
 	fill: lightgrey;
 }
 
 g:hover{
-	fill:rgb(234, 0, 255);
+	fill: rgb(170, 10, 10);
 	cursor: pointer;
  }
 
@@ -139,9 +174,10 @@ g:hover{
 .st6{fill:none;}
 
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
 	#canadaMap {
 	 	 width: 80vw;
 		 padding-left: 250px;
   }
-}
+} */
+
