@@ -28,6 +28,7 @@ function provinceClicked(){
     provinceTitle.innerHTML = `${provincesInfo[this.id]._name}`;
 
     selectedProv = this.id;
+    this.style.fill = "rgb(170, 10, 10)";
 }
 
 
