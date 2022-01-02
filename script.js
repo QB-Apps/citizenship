@@ -6,18 +6,15 @@ let provinceTitle = document.getElementById("title")
 let carte = document.getElementById("canadaMap")
 
 let info = document.getElementById("info")
-info.addEventListener("click", hideInfo);
-
+// info.addEventListener("click", hideInfo);
 
 let selectedProv = "";
 
 
 function findProvinces() {
-
 for (var i = 0; i < elements.length; i++) {   
     addEvents(i)
   }
-
 }
 
 function addEvents(el){
@@ -31,8 +28,6 @@ function provinceClicked(){
     provinceTitle.innerHTML = `${provincesInfo[this.id]._name}`;
 
     selectedProv = this.id;
-    
-    
 }
 
 
@@ -41,45 +36,52 @@ function hideInfo() {
     info.style.display = "none";
     provinceTitle.innerHTML = `Canada`;
     document.getElementById("capital").innerHTML = "Respuesta";
+    document.getElementById("prime").innerHTML = "Respuesta";
+    document.getElementById("parti").innerHTML = "Respuesta";
+    document.getElementById("lieutgouv").innerHTML = "Respuesta";
+    document.getElementById("opposition").innerHTML = "Respuesta";
+    document.getElementById("chefOp").innerHTML = "Respuesta";
+    document.getElementById("secteurs").innerHTML = "Respuesta";
+    document.getElementById("note").innerHTML = "Respuesta";
     
 }
 
-function verRespuesta() {
+function verRespuesta(id) {       
 
-       
+    let localId = id;
 
-    document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
-
-    alert(`${provincesInfo[selectedProv]._capital}`);
+    // document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
+  
     
+    switch (localId) {
+        case "capital":          
+            document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
+          break;
+        case "prime":
+            document.getElementById("prime").innerHTML = provincesInfo[selectedProv]._prime;
+          break;
+        case 6:
+          day = "Saturday";
+      }
 
+      
 }
 
 
 class Province{
 
-    constructor(name, capital, parti, prime, opposition, chefOpposition, lieutgouv, secteurs, note){
+    constructor(name, capital, parti, prime, opposition, chefOp, lieutgouv, secteurs, note){
         this._name = name;
         this._capital = capital;
         this._parti = parti;
         this._prime = prime;
         this._opposition = opposition;
-        this._chefOpposition = chefOpposition;
+        this._chefOp = chefOp;
         this._lieutgouv = lieutgouv;
         this._secteurs = secteurs;
         this._note = note;
     }
 }
-
-// function provinceSelector(number) {
-
-//     // console.log(`${provincesInfo.pName[number]} et
-//     //              ${provincesInfo.pPrime[number]}`)
-
-//     console.log(`${provincesInfo[number]._name}
-//     ${provincesInfo[number]._parti}`)
-
-// }
 
 let provincesInfo = []
 

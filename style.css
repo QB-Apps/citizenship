@@ -37,7 +37,7 @@ h1 {
 }
 
 #info {
-	/* display: none; */
+	display: none;
 	/* background-color: rgba(0, 0, 255, 0.363); */
 	width: 100%;
 	min-height: 200%;
@@ -49,6 +49,16 @@ h1 {
 
 }
 
+#close {
+	/* background-color: rgb(3, 78, 175); */
+	display: flex;
+	/* border: none; */
+	outline: none;
+	margin-right: 50px;
+	padding: .5rem;
+	font-size: 2rem;
+}
+
 /* #proContainer{
 	background-color: rgb(11, 155, 88);
 	position: absolute;
@@ -58,14 +68,16 @@ h1 {
 	/* background-color: rgba(255, 255, 255, 0.349); */
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 	/* justify-content: center; */
-	font-size: 1rem;
+	font-size: .9rem;
 	height: 50vh;
 	/* margin: 10px; */
 	/* padding: 5px; */
 	/* border-radius: 20px; */
 	/* box-shadow: 1px 1px 10px 1px black; */
+	
+	margin-left: 1rem;
 	
 }
 
@@ -80,8 +92,8 @@ h1 {
 #proContainer {
 	display: grid;
 	grid-template-columns: 1fr 40% 40% 1fr;
-	align-items: center;
-	justify-content: center;
+	align-items: start;
+	justify-content: start;
 	margin-top: 50px;
 	padding-top: 50px;
 	background-color: rgba(243, 107, 107, 0.349);
@@ -89,13 +101,19 @@ h1 {
 
 }
 
+#proForm > button {
+	margin-bottom: .5rem;
+	padding: .1rem;
+}
+
+
  #canadaMap {
 
 	/* background-color: rgb(165, 14, 14); */
- 	width: 100vw;
+ 	width: 140vw;
  	margin: 0 auto;
  	display: flex;
-	padding-left: 100px;
+	padding-left: 1rem;
 	/* filter: blur(2px); */
  }
 svg {
