@@ -36,14 +36,14 @@ function hideInfo() {
 
     info.style.display = "none";
     provinceTitle.innerHTML = `Canada`;
-    // document.getElementById("capital").innerHTML = "Respuesta";
-    // document.getElementById("prime").innerHTML = "Respuesta";
-    // document.getElementById("parti").innerHTML = "Respuesta";
-    // document.getElementById("lieutgouv").innerHTML = "Respuesta";
-    // document.getElementById("opposition").innerHTML = "Respuesta";
-    // document.getElementById("chefOp").innerHTML = "Respuesta";
-    // document.getElementById("secteurs").innerHTML = "Respuesta";
-    // document.getElementById("note").innerHTML = "Respuesta";
+    document.getElementById("capital").innerHTML = "Respuesta";
+    document.getElementById("prime").innerHTML = "Respuesta";
+    document.getElementById("parti").innerHTML = "Respuesta";
+    document.getElementById("lieutgouv").innerHTML = "Respuesta";
+    document.getElementById("opposition").innerHTML = "Respuesta";
+    document.getElementById("chefOp").innerHTML = "Respuesta";
+    document.getElementById("secteurs").innerHTML = "Respuesta";
+    document.getElementById("note").innerHTML = "Respuesta";
     
 }
 
@@ -56,13 +56,33 @@ function verRespuesta(id) {
     
     switch (localId) {
         case "capital":          
-            document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
+            document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._capital;
           break;
         case "prime":
-            document.getElementById("prime").innerHTML = provincesInfo[selectedProv]._prime;
+            document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._prime;
           break;
-        case 6:
-          day = "Saturday";
+        case "parti":
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._parti;
+        break;
+        case "lieutgouv":
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._lieutgouv;
+        break;
+        
+        case "opposition":
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._opposition;
+        break;
+        
+        case "chefOp":
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._chefOp;
+        break;
+        
+        case "secteurs":
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._secteurs;
+        break;
+        
+        case "note":
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._note;
+       
       }
 
       
@@ -88,146 +108,146 @@ let provincesInfo = []
 
 let qc = new Province("Québec", 
                       "Ville de Québec", 
-                      "CAQ Coalition Avenir Québec",
+                      "Coalition Avenir Québec",
                       "François Legault",
-                      "PQ Parti Québecois",
-                      "Pauline Marois",
-                      "Doyon",
-                      "Turisme, agrigulture, Hydroelecticité",
-                      "Vote Femme 1916"
+                      "",
+                      "",
+                      "J. Michel Doyon",
+                      "",
+                      ""
                       ); 
 
 let on = new Province("Ontario", 
                       "Toronto", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Progressive Conservative",
+                      "Doug Ford",
+                      "",
+                      "",
+                      "Elizabeth Dowdeswell",
+                      "",
+                      ""
                       );  
 
 let nl = new Province("Terre-Neuve-et-Labrador", 
                       "St. John's", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Liberal",
+                      "Andrew Furey",
+                      "",
+                      "",
+                      "Judy Foote",
+                      "",
+                      ""
                       ); 
 
 let bc = new Province("Colombie-Britannique", 
                       "Victoria", 
-                      "Conservative Party",
-                      "Dogdford",
+                      "New Democratic",
+                      "John Horgan",
                       "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "",
+                      "Janet Austin",
+                      "",
+                      ""
                       );  
 
 let ab = new Province("Alberta", 
                       "Edmonton", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "United Conservative",
+                      "Jason Kenney",
+                      " ",
+                      " ",
+                      "Salma Lakhani",
+                      " ",
+                      " "
                       ); 
 
 
 let mb = new Province("Manitoba", 
                       "Winnipeg", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Progressive Conservative",
+                      "Heather Stefanson",
+                      "",
+                      "",
+                      "Janice Filmon",
+                      "",
+                      ""
                       );  
 
 let nb = new Province("Nouveau-Brunswick", 
                       "Fredericton", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Progressive Conservative",
+                      "Blaine Higgs",
+                      "",
+                      "",
+                      "Brenda Murphy",
+                      "",
+                      ""
                       ); 
 
 let ns = new Province("Nouvelle-Écosse", 
                       "Halifax", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Progressive Conservative",
+                      "Tim Houston",
+                      "",
+                      "",
+                      "Arthur Joseph LeBlanc",
+                      "",
+                      ""
                       );  
 
 let sk = new Province("Saskatchewan", 
                       "Regina", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Saskatchewan Party",
+                      "Scott Moe",
+                      "",
+                      "",
+                      "Russell Mirasty",
+                      "",
+                      ""
                       ); 
 
 let nu = new Province("Nunavut", 
                       "Iqaluit", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Consensus government",
+                      "P.J. Akeeagok",
+                      "",
+                      "",
+                      "Eva Aariak",
+                      "",
+                      ""
                       ); 
 
 let nt = new Province("Territoires du Nord-Ouest", 
                       "Yellowknife", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Consensus government",
+                      "Caroline Cochrane",
+                      "",
+                      "",
+                      "Margaret Thom",
+                      "",
+                      ""
                       ); 
 
 let yt = new Province("Yukon", 
                       "Whitehorse", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Liberal",
+                      "Sandy Silver",
+                      "",
+                      "",
+                      "Angélique Bernard",
+                      "",
+                      ""
                       ); 
 
 let pe = new Province("Île-du-Prince-Édouard", 
                       "Charlottetown", 
-                      "Conservative Party",
-                      "Dogdford",
-                      "Parti Libéral",
-                      "Auwen",
-                      "Peter",
-                      "Turisme, agrigulture, services",
-                      "Bilangue"
+                      "Progressive Conservative",
+                      "Dennis King",
+                      "",
+                      "",
+                      "Antoinette Perry",
+                      "",
+                      ""
                       ); 
 
 provincesInfo = [ nl, bc, ns, qc, on, yt, nt, nu, pe, nb, mb, sk, ab]
