@@ -116,7 +116,7 @@ let qc = new Province("Québec",
                       "Dominique Anglade",
                       "J. Michel Doyon",
                       "Les pâtes et papiers, la foresterie et la production d'énergie hydroélectrique",
-                      "..."
+                      "Les Québécois sont des chefs de file dans des industries de pointe comme l’industrie pharmaceutique et l’aéronautique"
                       ); 
 
 let on = new Province("Ontario", 
@@ -127,7 +127,7 @@ let on = new Province("Ontario",
                       "Andrea Horwath",
                       "Elizabeth Dowdeswell",
                       "L'exploitation minière, le tourisme et le secteur automobile",
-                      "..."
+                      "L’Ontario compte plus d’un tiers de la population canadienne, Toronto est la plus importante ville du Canada et le principal centre financier du pays."
                       );  
 
 let nl = new Province("Terre-Neuve-et-Labrador", 
@@ -138,7 +138,7 @@ let nl = new Province("Terre-Neuve-et-Labrador",
                       "David Brazil",
                       "Judy May Foote",
                       "La pêche, le pétrole et l'extraction de gaz",
-                      "..."
+                      "Occupe son propre fuseau horaire."
                       ); 
 
 let bc = new Province("Colombie-Britannique", 
@@ -149,7 +149,7 @@ let bc = new Province("Colombie-Britannique",
                       "Shirley Bond",
                       "Janet Austin",
                       "La foresterie, les pâtes et papiers, la pêche, l'industrie minière et vinicole",
-                      "..."
+                      "La capitale, Victoria, est un centre touristique et sert de port d’attache à la flotte du Pacifique de la Marine canadienne."
                       );  
 
 let ab = new Province("Alberta", 
@@ -160,7 +160,7 @@ let ab = new Province("Alberta",
                       "Rachel Notley",
                       "Salma Lakhani",
                       "Première productrice de pétrole et de gaz du Canada, agriculture et exploitation bovines",
-                      "..."
+                      "Cette province, tout comme le célèbre lac Louise situé dans les montagnes Rocheuses, a été nommée en l’honneur de la princesse Louise Caroline Alberta, quatrième fille de la reine Victoria."
                       ); 
 
 
@@ -171,8 +171,8 @@ let mb = new Province("Manitoba",
                       "NPD",
                       "Wab Kinew",
                       "Janice Filmon",
-                      "L'agriculture, l'exploitation minière et la production d'énergie",
-                      "..."
+                      "L'agriculture, l’exploitation minière et la production d’hydroélectricité",
+                      "compte la plus grande proportion d’Autochtones de toutes les provinces, à plus de 15 pour 100 de sa population."
                       );  
 
 let nb = new Province("Nouveau-Brunswick", 
@@ -182,8 +182,8 @@ let nb = new Province("Nouveau-Brunswick",
                       "Liberal",
                       "Roger Melanson",
                       "Brenda Murphy",
-                      "La foresterie, l'agriculture et l'exploitation minière",
-                      "..."
+                      "La foresterie, l’agriculture, la pêche, les mines, la transformation des aliments et le tourisme",
+                      "La seule province officiellement bilingue"
                       ); 
 
 let ns = new Province("Nouvelle-Écosse", 
@@ -194,7 +194,7 @@ let ns = new Province("Nouvelle-Écosse",
                       "Iain Rankin",
                       "Arthur Joseph LeBlanc",
                       "L'exploitation du charbon, la foresterie et l'agriculture",
-                      "..."
+                      "la construction navale, à la pêche et à la marine marchande profite également de l’exploration pétrolière et gazière en mer"
                       );  
 
 let sk = new Province("Saskatchewan", 
@@ -204,8 +204,8 @@ let sk = new Province("Saskatchewan",
                       "NPD",
                       "Ryan Meili",
                       "Russell Mirasty",
-                      "",
-                      "..."
+                      "productrice de céréales, du pétrole et du gaz naturel",
+                      "autrefois surnommée « le grenier du monde » et « la province du blé », possède 40 pour 100 des terres arables du Canada"
                       ); 
 
 let nu = new Province("Nunavut", 
