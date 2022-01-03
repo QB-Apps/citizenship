@@ -143,7 +143,7 @@ let nl = new Province("Terre-Neuve-et-Labrador",
 
 let bc = new Province("Colombie-Britannique", 
                       "Victoria", 
-                      "New Democratic",
+                      "NPD",
                       "John Horgan",
                       "Liberal",
                       "Shirley Bond",
