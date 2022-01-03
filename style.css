@@ -84,7 +84,37 @@ h1 {
 
 }
 
-#close {
+/* .top{
+	font-size: 2rem;
+} */
+
+.aver{
+	margin: 1rem;
+}
+
+.verto {
+	background-color: rgba(255, 255, 255, 0.062);
+	/* display: flex; */
+	border: none;
+	outline: none;
+	/* margin-right: 50px; */
+	padding: .5rem;
+	font-size: 2rem;
+	color: whitesmoke;
+	width: 100%;
+	border-radius: 20px;
+
+}
+
+.verto span{
+	
+	font-size: 2rem;
+	color: rgb(206, 169, 4);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.close {
 	background-color: rgba(255, 255, 255, 0);
 	/* display: flex; */
 	border: none;
@@ -107,7 +137,7 @@ h1 {
 	align-items: start;
 	/* justify-content: center; */
 	font-size: .9rem;
-	height: 50vh;
+	/* height: 50vh; */
 	/* margin: 10px; */
 	/* padding: 5px; */
 	/* border-radius: 20px; */
@@ -122,6 +152,11 @@ h1 {
 	text-shadow: 1px 1px 5px black;
 	/* background-color: #fff; */
 
+}
+
+.down{
+	/* background-color: rgba(239, 252, 184, 0.575); */
+	height: 100vh;
 }
 
 
@@ -143,12 +178,27 @@ h1 {
 	grid-column: 3/5;
 }
 
+
+
 #proForm > button {
 	margin-bottom: .5rem;
-	padding: .1rem;
+	padding: .22rem;
+	border: none;
+	border-radius: 5px;
 }
 
+#hideArea {
+	/* background-color: rgb(39, 223, 70); */
+	/* grid-column: 3 span 4; */
+	grid-column: 1/5;
+}
 
+#hideArea button {
+	background-color: rgba(255, 255, 255, 0);
+	width: 100%;
+	height: 100%;
+	border: none;
+}
 
 
 svg {

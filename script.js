@@ -6,6 +6,7 @@ let provinceTitle = document.getElementById("title")
 let carte = document.getElementById("canadaMap")
 
 let info = document.getElementById("info")
+let hideArea = document.getElementsByClassName("down")
 // info.addEventListener("click", hideInfo);
 
 let selectedProv = "";
@@ -15,7 +16,16 @@ function findProvinces() {
 for (var i = 0; i < elements.length; i++) {   
     addEvents(i)
   }
+
+for (var i = 0; i < hideArea.length; i++) {   
+    addEvents(i)
+  }
 }
+
+function addClickArea(a){
+    hideArea[a].addEventListener("click", hideInfo)
+}
+
 
 function addEvents(el){
     elements[el].addEventListener("click", provinceClicked)
@@ -44,6 +54,19 @@ function hideInfo() {
     document.getElementById("chefOp").innerHTML = "Respuesta";
     document.getElementById("secteurs").innerHTML = "Respuesta";
     document.getElementById("note").innerHTML = "Respuesta";
+    
+}
+
+function showAll() {
+
+    document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
+    document.getElementById("prime").innerHTML = provincesInfo[selectedProv]._prime;
+    document.getElementById("parti").innerHTML = provincesInfo[selectedProv]._parti;
+    document.getElementById("lieutgouv").innerHTML = provincesInfo[selectedProv]._lieutgouv;
+    document.getElementById("opposition").innerHTML = provincesInfo[selectedProv]._opposition;
+    document.getElementById("chefOp").innerHTML = provincesInfo[selectedProv]._chefOp;
+    document.getElementById("secteurs").innerHTML = provincesInfo[selectedProv]._secteurs;
+    document.getElementById("note").innerHTML = provincesInfo[selectedProv]._note;
     
 }
 
@@ -103,8 +126,8 @@ let qc = new Province("Québec",
                       "Libéral",
                       "Dominique Anglade",
                       "J. Michel Doyon",
-                      "",
-                      ""
+                      "vamos a escribir algo bien largo en esta respuesta aver cuanto cabe",
+                      "vamos a escribir algo bien largo en esta respuesta aver cuanto cabe"
                       ); 
 
 let on = new Province("Ontario", 

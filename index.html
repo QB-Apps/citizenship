@@ -355,8 +355,10 @@
             <div id="proContainer">
                 <div class="top"></div>
                 <div class="top"></div>
-                <div class="top"></div>
-                <button id="close" onclick="hideInfo()">➜</button>
+                <div class="aver">
+                    <button class="verto" onclick="showAll()">🧐 <span></span></button>
+                </div>
+                <button class="close" onclick="hideInfo()">➜</button>
                 <div class="left"></div>
                 <div id="proForm">
                     <p>Capital :</p>
@@ -378,9 +380,13 @@
                     <button id="secteurs" onclick="verRespuesta(this.id)">Respuesta</button>
                     <button id="note" onclick="verRespuesta(this.id)">Respuesta</button>
                 </div>
-                <div class="right">
-                    <!-- <button id="close" onclick="hideInfo()">✔️</button> -->
+                <div class="right">                    
                 </div>
+                <div id="hideArea" class="down">
+                    <button onclick="hideInfo()"></button>
+                </div>
+                <div class="down">1</div>
+                <div class="down">1</div>
             </div>
         </div>
 
