@@ -6,8 +6,6 @@ let provinceTitle = document.getElementById("title")
 let carte = document.getElementById("canadaMap")
 
 let info = document.getElementById("info")
-let hideArea = document.getElementsByClassName("down")
-// info.addEventListener("click", hideInfo);
 
 let selectedProv = "";
 
@@ -16,16 +14,7 @@ function findProvinces() {
 for (var i = 0; i < elements.length; i++) {   
     addEvents(i)
   }
-
-for (var i = 0; i < hideArea.length; i++) {   
-    addEvents(i)
-  }
 }
-
-function addClickArea(a){
-    hideArea[a].addEventListener("click", hideInfo)
-}
-
 
 function addEvents(el){
     elements[el].addEventListener("click", provinceClicked)
