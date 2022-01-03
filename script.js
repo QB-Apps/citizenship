@@ -49,10 +49,7 @@ function hideInfo() {
 
 function verRespuesta(id) {       
 
-    let localId = id;
-
-    // document.getElementById("capital").innerHTML = provincesInfo[selectedProv]._capital;
-  
+    let localId = id;  
     
     switch (localId) {
         case "capital":          
@@ -66,26 +63,19 @@ function verRespuesta(id) {
         break;
         case "lieutgouv":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._lieutgouv;
-        break;
-        
+        break;        
         case "opposition":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._opposition;
-        break;
-        
+        break;        
         case "chefOp":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._chefOp;
-        break;
-        
+        break;        
         case "secteurs":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._secteurs;
-        break;
-        
+        break;        
         case "note":
-          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._note;
-       
-      }
-
-      
+          document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._note;       
+      }      
 }
 
 
@@ -110,8 +100,8 @@ let qc = new Province("Québec",
                       "Ville de Québec", 
                       "Coalition Avenir Québec",
                       "François Legault",
-                      "",
-                      "",
+                      "Libéral",
+                      "Dominique Anglade",
                       "J. Michel Doyon",
                       "",
                       ""
@@ -121,8 +111,8 @@ let on = new Province("Ontario",
                       "Toronto", 
                       "Progressive Conservative",
                       "Doug Ford",
-                      "",
-                      "",
+                      "NPD",
+                      "Andrea Horwath",
                       "Elizabeth Dowdeswell",
                       "",
                       ""
@@ -132,8 +122,8 @@ let nl = new Province("Terre-Neuve-et-Labrador",
                       "St. John's", 
                       "Liberal",
                       "Andrew Furey",
-                      "",
-                      "",
+                      "Progressive Conservative",
+                      "David Brazil",
                       "Judy Foote",
                       "",
                       ""
@@ -143,8 +133,8 @@ let bc = new Province("Colombie-Britannique",
                       "Victoria", 
                       "New Democratic",
                       "John Horgan",
-                      "Parti Libéral",
-                      "",
+                      "Liberal",
+                      "Shirley Bond",
                       "Janet Austin",
                       "",
                       ""
@@ -154,8 +144,8 @@ let ab = new Province("Alberta",
                       "Edmonton", 
                       "United Conservative",
                       "Jason Kenney",
-                      " ",
-                      " ",
+                      "NPD",
+                      "Rachel Notley",
                       "Salma Lakhani",
                       " ",
                       " "
@@ -166,8 +156,8 @@ let mb = new Province("Manitoba",
                       "Winnipeg", 
                       "Progressive Conservative",
                       "Heather Stefanson",
-                      "",
-                      "",
+                      "NPD",
+                      "Wab Kinew",
                       "Janice Filmon",
                       "",
                       ""
@@ -177,8 +167,8 @@ let nb = new Province("Nouveau-Brunswick",
                       "Fredericton", 
                       "Progressive Conservative",
                       "Blaine Higgs",
-                      "",
-                      "",
+                      "Liberal",
+                      "Roger Melanson",
                       "Brenda Murphy",
                       "",
                       ""
@@ -188,8 +178,8 @@ let ns = new Province("Nouvelle-Écosse",
                       "Halifax", 
                       "Progressive Conservative",
                       "Tim Houston",
-                      "",
-                      "",
+                      "Liberal",
+                      "Iain Rankin",
                       "Arthur Joseph LeBlanc",
                       "",
                       ""
@@ -199,8 +189,8 @@ let sk = new Province("Saskatchewan",
                       "Regina", 
                       "Saskatchewan Party",
                       "Scott Moe",
-                      "",
-                      "",
+                      "NPD",
+                      "Ryan Meili",
                       "Russell Mirasty",
                       "",
                       ""
@@ -232,8 +222,8 @@ let yt = new Province("Yukon",
                       "Whitehorse", 
                       "Liberal",
                       "Sandy Silver",
-                      "",
-                      "",
+                      "Parti du Yukon",
+                      "Currie Dixon",
                       "Angélique Bernard",
                       "",
                       ""
@@ -243,8 +233,8 @@ let pe = new Province("Île-du-Prince-Édouard",
                       "Charlottetown", 
                       "Progressive Conservative",
                       "Dennis King",
-                      "",
-                      "",
+                      "Vert",
+                      "Peter Bevan-Baker",
                       "Antoinette Perry",
                       "",
                       ""
