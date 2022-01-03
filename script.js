@@ -115,8 +115,8 @@ let qc = new Province("Québec",
                       "Libéral",
                       "Dominique Anglade",
                       "J. Michel Doyon",
-                      "vamos a escribir algo bien largo en esta respuesta aver cuanto cabe",
-                      "vamos a escribir algo bien largo en esta respuesta aver cuanto cabe"
+                      "Les pâtes et papiers, la foresterie et la production d'énergie hydroélectrique",
+                      "..."
                       ); 
 
 let on = new Province("Ontario", 
@@ -126,8 +126,8 @@ let on = new Province("Ontario",
                       "NPD",
                       "Andrea Horwath",
                       "Elizabeth Dowdeswell",
-                      "",
-                      ""
+                      "L'exploitation minière, le tourisme et le secteur automobile",
+                      "..."
                       );  
 
 let nl = new Province("Terre-Neuve-et-Labrador", 
@@ -138,7 +138,7 @@ let nl = new Province("Terre-Neuve-et-Labrador",
                       "David Brazil",
                       "Judy May Foote",
                       "La pêche, le pétrole et l'extraction de gaz",
-                      ""
+                      "..."
                       ); 
 
 let bc = new Province("Colombie-Britannique", 
@@ -148,8 +148,8 @@ let bc = new Province("Colombie-Britannique",
                       "Liberal",
                       "Shirley Bond",
                       "Janet Austin",
-                      "",
-                      ""
+                      "La foresterie, les pâtes et papiers, la pêche, l'industrie minière et vinicole",
+                      "..."
                       );  
 
 let ab = new Province("Alberta", 
@@ -159,8 +159,8 @@ let ab = new Province("Alberta",
                       "NPD",
                       "Rachel Notley",
                       "Salma Lakhani",
-                      " ",
-                      " "
+                      "Première productrice de pétrole et de gaz du Canada, agriculture et exploitation bovines",
+                      "..."
                       ); 
 
 
@@ -172,7 +172,7 @@ let mb = new Province("Manitoba",
                       "Wab Kinew",
                       "Janice Filmon",
                       "L'agriculture, l'exploitation minière et la production d'énergie",
-                      "???"
+                      "..."
                       );  
 
 let nb = new Province("Nouveau-Brunswick", 
@@ -183,7 +183,7 @@ let nb = new Province("Nouveau-Brunswick",
                       "Roger Melanson",
                       "Brenda Murphy",
                       "La foresterie, l'agriculture et l'exploitation minière",
-                      ""
+                      "..."
                       ); 
 
 let ns = new Province("Nouvelle-Écosse", 
@@ -194,7 +194,7 @@ let ns = new Province("Nouvelle-Écosse",
                       "Iain Rankin",
                       "Arthur Joseph LeBlanc",
                       "L'exploitation du charbon, la foresterie et l'agriculture",
-                      ""
+                      "..."
                       );  
 
 let sk = new Province("Saskatchewan", 
@@ -205,29 +205,29 @@ let sk = new Province("Saskatchewan",
                       "Ryan Meili",
                       "Russell Mirasty",
                       "",
-                      ""
+                      "..."
                       ); 
 
 let nu = new Province("Nunavut", 
                       "Iqaluit", 
                       "Consensus government",
                       "P.J. Akeeagok",
-                      "??",
-                      "??",
+                      "Aucun",
+                      "Personne",
                       "Eva Aariak",
-                      "",
-                      ""
+                      "mines d’or, de plomb, de cuivre, de diamants et de zinc, et des gisements de pétrole et de gaz",
+                      "..."
                       ); 
 
 let nt = new Province("Territoires du Nord-Ouest", 
                       "Yellowknife", 
                       "Consensus government",
                       "Caroline Cochrane",
-                      "??",
-                      "??",
+                      "Aucun",
+                      "Personne",
                       "Margaret Thom",
-                      "",
-                      ""
+                      "mines d’or, de plomb, de cuivre, de diamants et de zinc, et des gisements de pétrole et de gaz",
+                      "..."
                       ); 
 
 let yt = new Province("Yukon", 
@@ -237,8 +237,8 @@ let yt = new Province("Yukon",
                       "Parti du Yukon",
                       "Currie Dixon",
                       "Angélique Bernard",
-                      "",
-                      ""
+                      "Les mines continuent d’ailleurs d’occuper une grande place dans l’économie du Yukon",
+                      "..."
                       ); 
 
 let pe = new Province("Île-du-Prince-Édouard", 
@@ -248,8 +248,8 @@ let pe = new Province("Île-du-Prince-Édouard",
                       "Vert",
                       "Peter Bevan-Baker",
                       "Antoinette Perry",
-                      "",
-                      ""
+                      "la plus petite des provinces, est reconnue pour ses plages, sa terre rouge et son agriculture, particulièrement sa production de pommes de terre",
+                      "Berceau de la Confédération"
                       ); 
 
 provincesInfo = [ nl, bc, ns, qc, on, yt, nt, nu, pe, nb, mb, sk, ab]
