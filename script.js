@@ -9,7 +9,6 @@ let info = document.getElementById("info")
 
 let selectedProv = "";
 
-
 function findProvinces() {
 for (var i = 0; i < elements.length; i++) {   
     addEvents(i)
@@ -35,14 +34,14 @@ function hideInfo() {
 
     info.style.display = "none";
     provinceTitle.innerHTML = `Canada`;
-    document.getElementById("capital").innerHTML = "Respuesta";
-    document.getElementById("prime").innerHTML = "Respuesta";
-    document.getElementById("parti").innerHTML = "Respuesta";
-    document.getElementById("lieutgouv").innerHTML = "Respuesta";
-    document.getElementById("opposition").innerHTML = "Respuesta";
-    document.getElementById("chefOp").innerHTML = "Respuesta";
-    document.getElementById("secteurs").innerHTML = "Respuesta";
-    document.getElementById("note").innerHTML = "Respuesta";
+    document.getElementById("capital").innerHTML = "Réponse";
+    document.getElementById("prime").innerHTML = "Réponse";
+    document.getElementById("parti").innerHTML = "Réponse";
+    document.getElementById("lieutgouv").innerHTML = "Réponse";
+    document.getElementById("opposition").innerHTML = "Réponse";
+    document.getElementById("chefOp").innerHTML = "Réponse";
+    document.getElementById("secteurs").innerHTML = "Réponse";
+    document.getElementById("note").innerHTML = "Réponse";
     
 }
 
@@ -253,76 +252,5 @@ let pe = new Province("Île-du-Prince-Édouard",
                       ); 
 
 provincesInfo = [ nl, bc, ns, qc, on, yt, nt, nu, pe, nb, mb, sk, ab]
-
-
-// select elements
-// var elements = Array.from(document.querySelectorAll('g'));
-
-
-// var a = document.getElementById("canadaMap");
-
-// alert(elements[2].id)
-
-// elements[0].addEventListener("click", function(){ alert(`${elements[0].id} clicked`);}
-// , false);
-
-
-// add event listeners
-// elements.forEach(function(el) {
-//    el.addEventListener("touchstart", start);
-//    el.addEventListener("mousedown",  start);
-//    el.addEventListener("touchmove",  move);
-//    el.addEventListener("mousemove",  move);
-// })
-
-// // event listener functions
-
-// function start(e){
-//     alert(e.id)
-//   console.log(e);
-//   // just an example
-// }
-
-// function move(e){
-//   console.log(e);
-//   // just an example
-// }
-
-
-
-// select elements
-// var elements = Array.from(document.querySelectorAll('#canadaMap path'));
-
-// // add event listeners
-// elements.forEach(function(el) {
-//    el.addEventListener("touchstart", start);
-//    el.addEventListener("mousedown",  start);
-//    el.addEventListener("touchmove",  move);
-//    el.addEventListener("mousemove",  move);
-// })
-
-// // event listener functions
-
-// function start(e){
-//     alert(e.id)
-//   console.log(e);
-//   // just an example
-// }
-
-// function move(e){
-//   console.log(e);
-//   // just an example
-// }
-
-// var a = document.getElementById("canadaMap");
-// a.addEventListener("load",function(){
-//   var svgDoc = a.contentDocument;
-//   var els = svgDoc.querySelectorAll("NFL_L");
-//   for (var i = 0, length = els.length; i < length; i++) {
-//     els[i].addEventListener("click", 
-//        function(){ alert("clicked"); 
-//     }, false);
-//   }
-// },false);
 
 
