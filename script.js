@@ -136,8 +136,8 @@ let nl = new Province("Terre-Neuve-et-Labrador",
                       "Andrew Furey",
                       "Progressive Conservative",
                       "David Brazil",
-                      "Judy Foote",
-                      "",
+                      "Judy May Foote",
+                      "La pêche, le pétrole et l'extraction de gaz",
                       ""
                       ); 
 
@@ -171,8 +171,8 @@ let mb = new Province("Manitoba",
                       "NPD",
                       "Wab Kinew",
                       "Janice Filmon",
-                      "",
-                      ""
+                      "L'agriculture, l'exploitation minière et la production d'énergie",
+                      "???"
                       );  
 
 let nb = new Province("Nouveau-Brunswick", 
@@ -182,7 +182,7 @@ let nb = new Province("Nouveau-Brunswick",
                       "Liberal",
                       "Roger Melanson",
                       "Brenda Murphy",
-                      "",
+                      "La foresterie, l'agriculture et l'exploitation minière",
                       ""
                       ); 
 
@@ -193,7 +193,7 @@ let ns = new Province("Nouvelle-Écosse",
                       "Liberal",
                       "Iain Rankin",
                       "Arthur Joseph LeBlanc",
-                      "",
+                      "L'exploitation du charbon, la foresterie et l'agriculture",
                       ""
                       );  
 
@@ -212,8 +212,8 @@ let nu = new Province("Nunavut",
                       "Iqaluit", 
                       "Consensus government",
                       "P.J. Akeeagok",
-                      "",
-                      "",
+                      "??",
+                      "??",
                       "Eva Aariak",
                       "",
                       ""
@@ -223,8 +223,8 @@ let nt = new Province("Territoires du Nord-Ouest",
                       "Yellowknife", 
                       "Consensus government",
                       "Caroline Cochrane",
-                      "",
-                      "",
+                      "??",
+                      "??",
                       "Margaret Thom",
                       "",
                       ""
