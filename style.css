@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+:root {
+	--NPD: #FF8000 ;
+	--Liberal: #D91920;
+	--ProCons: #0268AE;
+	--CAQ: #4DB4D4;
+	--Sasck: #006D28;
+	--UnitedCons: #023E82;
+  }
+
 
 body {
 
@@ -136,6 +145,11 @@ h1 {
 	/* background-color: rgb(39, 223, 70); */
 	/* grid-column: 3 span 4; */
 	grid-column: 3/5;
+}
+
+.respuestas button {
+
+	background-color: whitesmoke;
 }
 
 

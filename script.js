@@ -8,6 +8,16 @@ let carte = document.getElementById("canadaMap")
 let info = document.getElementById("info")
 
 let selectedProv = "";
+let selProv 
+
+let colorNeutre = "whitesmoke";
+
+let NPD = "#FF8000";
+let Liberal = "#D91920";
+let ProCons = "#0268AE";
+let CAQ = "#4DB4D4";
+let Sasck = "#006D28";
+let UnitedCons = "#023E82";
 
 function findProvinces() {
 for (var i = 0; i < elements.length; i++) {   
@@ -26,7 +36,9 @@ function provinceClicked(){
     provinceTitle.innerHTML = `${provincesInfo[this.id]._name}`;
 
     selectedProv = this.id;
-    this.style.fill = "rgb(170, 10, 10)";
+    
+    selProv = document.getElementById(selectedProv);
+    this.style.fill = "white";
 }
 
 
@@ -43,6 +55,10 @@ function hideInfo() {
     document.getElementById("secteurs").innerHTML = "Réponse";
     document.getElementById("note").innerHTML = "Réponse";
     
+    document.getElementById("parti").style.backgroundColor = colorNeutre ;
+    
+    document.getElementById("parti").style.color = 'black' ;
+
 }
 
 function showAll() {
@@ -55,6 +71,8 @@ function showAll() {
     document.getElementById("chefOp").innerHTML = provincesInfo[selectedProv]._chefOp;
     document.getElementById("secteurs").innerHTML = provincesInfo[selectedProv]._secteurs;
     document.getElementById("note").innerHTML = provincesInfo[selectedProv]._note;
+
+    colorParti();
     
 }
 
@@ -71,6 +89,7 @@ function verRespuesta(id) {
           break;
         case "parti":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._parti;
+          colorParti();
         break;
         case "lieutgouv":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._lieutgouv;
@@ -87,6 +106,59 @@ function verRespuesta(id) {
         case "note":
           document.getElementById(localId).innerHTML = provincesInfo[selectedProv]._note;       
       }      
+}
+
+function colorParti(){
+
+  document.getElementById("parti").style.color = 'white' ;
+
+  if(selectedProv === "0" || selectedProv === "5"){
+    document.getElementById("parti").style.backgroundColor = Liberal ;
+    
+    selProv.style.fill = Liberal;
+  }
+
+  if(selectedProv === "1") {
+    document.getElementById("parti").style.backgroundColor = NPD ;
+    
+    selProv.style.fill = NPD;
+  }
+
+  if(selectedProv === "3") {
+    document.getElementById("parti").style.backgroundColor = CAQ ;
+    
+    selProv.style.fill = CAQ;
+    
+  }
+
+  if(selectedProv === "6" || selectedProv === "7") {
+    document.getElementById("parti").style.backgroundColor = colorNeutre ;
+    
+    selProv.style.fill = colorNeutre;
+
+    document.getElementById("parti").style.color = 'black' ;
+  }
+
+
+  if(selectedProv === "4" || selectedProv === "8" || selectedProv === "9" || selectedProv === "10" ||selectedProv === "2"  ){
+    document.getElementById("parti").style.backgroundColor = ProCons ;
+    
+    selProv.style.fill = ProCons;
+  }
+
+  if(selectedProv === "11"){
+    document.getElementById("parti").style.backgroundColor = Sasck ;
+    
+    selProv.style.fill = Sasck;
+  }
+
+  if(selectedProv === "12"){
+    document.getElementById("parti").style.backgroundColor = UnitedCons ;
+    
+    selProv.style.fill = UnitedCons;
+  }
+  
+
 }
 
 
