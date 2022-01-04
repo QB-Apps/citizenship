@@ -137,7 +137,7 @@ let nl = new Province("Terre-Neuve-et-Labrador",
                       "David Brazil",
                       "Judy May Foote",
                       "La pêche, le pétrole et l'extraction de gaz",
-                      "Occupe son propre fuseau horaire."
+                      "Occupe son propre fuseau horaire. dernière province à se joindre au Canada 1949 "
                       ); 
 
 let bc = new Province("Colombie-Britannique", 
@@ -148,7 +148,7 @@ let bc = new Province("Colombie-Britannique",
                       "Shirley Bond",
                       "Janet Austin",
                       "La foresterie, les pâtes et papiers, la pêche, l'industrie minière et vinicole",
-                      "La capitale, Victoria, est un centre touristique et sert de port d’attache à la flotte du Pacifique de la Marine canadienne."
+                      "Le port Metro Vancouver, le plus achalandé au Canada, La capitale, Victoria, est un centre touristique et sert de port d’attache à la flotte du Pacifique de la Marine canadienne."
                       );  
 
 let ab = new Province("Alberta", 
@@ -171,7 +171,7 @@ let mb = new Province("Manitoba",
                       "Wab Kinew",
                       "Janice Filmon",
                       "L'agriculture, l’exploitation minière et la production d’hydroélectricité",
-                      "compte la plus grande proportion d’Autochtones de toutes les provinces, à plus de 15 pour 100 de sa population."
+                      ". En 1916, le Manitoba devient la première province à accorder le droit de vote aux femmes, père du Manitoba Louis Riel - Fort Garry, compte la plus grande proportion d’Autochtones de toutes les provinces, à plus de 15 pour 100 de sa population."
                       );  
 
 let nb = new Province("Nouveau-Brunswick", 
