@@ -13,7 +13,6 @@
 	--UnitedCons: #023E82;
   }
 
-
 body {
 
   background-color: #282c34;
@@ -190,6 +189,37 @@ g:hover{
 .st3{font-family:'MyriadPro-Regular';}
 .st5{fill:none;}
 .st6{fill:none;}
+
+
+.foto-container{
+	/* background-color: rgb(10, 204, 188); */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 5px;
+	align-items: center;
+	justify-content: stretch;
+}
+
+.foto-container div{
+	/* background-color: rgb(120, 204, 10); */
+	
+	padding: 5px;
+	}
+
+	.foto img{
+		/* max-width: 150px; */
+		/* display: block; */
+		width: 100%;
+		height: 100%;
+		/* object-fit: cover;		 */
+		border-radius: 10px;
+		border: 2px solid whitesmoke ;
+		
+		}
+
+
+
+
 
 
 /* @media screen and (min-width: 600px) {
