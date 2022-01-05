@@ -197,7 +197,7 @@ g:hover{
 	grid-template-columns: 1fr 1fr 1fr;
 	/* gap: 5px; */
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .foto-container div{
