@@ -7,6 +7,11 @@ let carte = document.getElementById("canadaMap")
 
 let info = document.getElementById("info")
 
+let Pic1 = document.getElementById("pic1")
+let Pic2 = document.getElementById("pic2")
+let Pic3 = document.getElementById("pic3")
+
+
 let selectedProv = "";
 let selProv 
 
@@ -29,9 +34,14 @@ function addEvents(el){
     elements[el].addEventListener("click", provinceClicked)
 }
 
+function encontrandoAnemo(){
+
+}
+
 function provinceClicked(){
     
-    info.style.display = "block";    
+    info.style.display = "block";      
+    Pic2.style.display = "block";  
 
     provinceTitle.innerHTML = `${provincesInfo[this.id]._name}`;
 
@@ -39,12 +49,23 @@ function provinceClicked(){
     
     selProv = document.getElementById(selectedProv);
     this.style.fill = "white";
+
+    Pic1.src= `${selectedProv}.jpg`;
+    Pic2.src= `${selectedProv}-1.jpg`;
+    Pic3.src= `${selectedProv}-2.jpg`;    
+
+    
+    if(selectedProv === "6" || selectedProv === "7"){
+      Pic2.style.display = "none";
+    }
+
 }
 
 
 function hideInfo() {
 
     info.style.display = "none";
+
     provinceTitle.innerHTML = `Canada`;
     document.getElementById("capital").innerHTML = "Réponse";
     document.getElementById("prime").innerHTML = "Réponse";
@@ -58,7 +79,7 @@ function hideInfo() {
     document.getElementById("parti").style.backgroundColor = colorNeutre ;
     
     document.getElementById("parti").style.color = 'black' ;
-
+    
 }
 
 function showAll() {
