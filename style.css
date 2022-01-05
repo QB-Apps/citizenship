@@ -22,8 +22,8 @@ body {
   line-height: 30px;
 
   color: rgb(255, 255, 255);
-  
-  
+
+
 }
 
 .main-container{
@@ -31,9 +31,9 @@ body {
 	margin: 0 auto;
 
 	position: relative;
-	
+
 	max-width: 1000px;
-	
+
 	/* width: 500px; */
 }
 
@@ -61,7 +61,7 @@ h1 {
 #info {
 	display: none;
 	/* background-color: rgba(0, 0, 255, 0.363); */
-	
+
 	width: 100%;
 	min-height: 100%;
 	position: absolute;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .verto span{
-	
+
 	font-size: 2rem;
 	color: rgb(206, 169, 4);
 	-webkit-text-stroke-width: 1px;
@@ -195,15 +195,15 @@ g:hover{
 	/* background-color: rgb(10, 204, 188); */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 5px;
-	align-items: center;
-	justify-content: stretch;
+	/* gap: 5px; */
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .foto-container div{
 	/* background-color: rgb(120, 204, 10); */
-	
-	padding: 5px;
+
+	padding: 0px 10px 0px 10px;
 	}
 
 	.foto img{
@@ -214,7 +214,7 @@ g:hover{
 		/* object-fit: cover;		 */
 		border-radius: 10px;
 		border: 2px solid whitesmoke ;
-		
+
 		}
 
 
